@@ -1,0 +1,6 @@
+services:
+  service1:
+    class: AppBundle\Services\Service1
+    autowire: true
+    tags:
+      - { name: monolog.logger, channel: test}
