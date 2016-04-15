@@ -13,6 +13,10 @@ class Service1 implements LoggerAwareInterface
 {
     use LoggerAwareTrait;
 
+    public function __construct()
+    {
+    }
+
     public function test()
     {
         $this->logger->error('test');
